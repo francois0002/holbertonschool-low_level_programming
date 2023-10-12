@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: 'the program's description'
- * Return: Always 0 (Success)
+ * Description: affiche la taille des parametre type
+ * Return:  0
  */
 int main(void)
 {

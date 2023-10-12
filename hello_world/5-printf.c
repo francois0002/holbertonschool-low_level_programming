@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- * main - fonction main
+ * main - Entry point
+ * Description: affiche du texte
+ * Return:  0
  */
 int main(void)
 {
