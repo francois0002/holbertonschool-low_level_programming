@@ -10,12 +10,18 @@ int main(void)
 {
 int number;
 int espace = 32;
-for (number = '0' ;  number <= '9' ; number++)
+int virgule = 44;
+
+for (number = 48 ;  number < 58 ; number++)
 {
-putchar(number);
-putchar (',');
+putchar (number);
+if (number < 57)
+{
+putchar (virgule);
 putchar (espace);
 }
+}
+
 putchar ('\n');
 return (0);
 }
