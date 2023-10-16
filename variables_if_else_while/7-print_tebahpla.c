@@ -3,14 +3,14 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: afficher alphabet de a à z avec putchar
+ * Description: afficher alphabet a l'envers
  * Return:  0
  */
 	 int main(void)
 {
 char alpha;
 
-for (alpha = 'a' ; alpha <= 'z' ; alpha++)
+for (alpha = 'z' ; alpha <= 'a' ; alpha--)
 {
 putchar (alpha);
 }
