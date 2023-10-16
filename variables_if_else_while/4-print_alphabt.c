@@ -9,14 +9,12 @@
 	 int main(void)
 {
 char alpha_lower;
-
-for (alpha_lower = 'a' ; alpha_lower <= 'z' ; alpha_lower++)
+for (alpha_lower = 'a' ;  alpha_lower <= 'z' ; alpha_lower++)
 {
-if (alpha_lower >= 'a'&& alpha_lower < 'e' && alpha_lower >= 'f' && alpha_lower < 'o'  )
-{
+if (alpha_lower != 'e' && alpha_lower != 'q')
 putchar (alpha_lower);
-}
 }
 putchar ('\n');
 return (0);
 }
+
