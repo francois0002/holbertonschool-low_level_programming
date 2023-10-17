@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * _print_sign - Entry point
+ * print_sign - Entry point
  * Description: affiche le signe d'un nombre
  * @n: variable d'un nombre entier positif ou négatif
  * Return:  0
