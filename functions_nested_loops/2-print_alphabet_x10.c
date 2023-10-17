@@ -3,18 +3,21 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet_x10 - Entry point
  * Description: afficher alphabet de a à z avec putchar
  * Return:  0
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-char a;
+	int i;
+	char a;
 
-for (a = 97; a <= 122 ; a++)
-{
-_putchar (a);
-}
-_putchar ('\n');
-return (0);
+	for (i = 0 ; i <= 10 ; i++)
+	{
+		for (a = 97; a <= 122 ; a++)
+		{
+			_putchar(a);
+		}
+		_putchar('\n');
+	}
 }
