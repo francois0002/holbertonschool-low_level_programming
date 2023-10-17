@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  * Description: afficher alphabet de a à z avec putchar
  * Return:  0
  */
