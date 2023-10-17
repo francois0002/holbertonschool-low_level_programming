@@ -5,11 +5,12 @@
 /**
  * _islower - Entry point
  * Description: afficher alphabet de a à z avec putchar
+ * @c: variable qui prend un charactère
  * Return:  0
  */
 int _islower(int c)
 {
-	if (c >=61 && c<=122)
+	if (c >= 97 && c <= 122)
 	return (1);
 	else
 	return (0);
