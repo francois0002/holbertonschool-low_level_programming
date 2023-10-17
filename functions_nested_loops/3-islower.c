@@ -1,7 +1,6 @@
 #include <time.h>
 #include <stdio.h>
 #include <unistd.h>
-#include <ctype.h>
 #include "main.h"
 /**
  * _islower - Entry point
@@ -10,8 +9,8 @@
  */
 int _islower(int c)
 {
-	if (islower(c) == 2)
+	if (c >=61 && c<=122)
 	return (1);
-	else 
+	else
 	return (0);
 }
