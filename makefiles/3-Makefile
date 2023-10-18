@@ -2,7 +2,6 @@ CC = gcc
 SRC = .c
 OBJ = .o
 NAME = school
-RM = oclean
 
 all : $(NAME)
 
@@ -16,7 +15,7 @@ school$(OBJ) : school$(SRC) m.h
 	$(CC) -o school$(OBJ) -c school$(SRC)
 
 clean :
-	rm *\~
+	rm -f *~ school
     
 oclean :
 	rm -rf *.o
