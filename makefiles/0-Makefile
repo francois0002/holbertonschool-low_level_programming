@@ -1,8 +1,10 @@
-school : main.c school.c
-	gcc -o prog main.o school.o
+all : school
+
+school : main.o school.o
+	gcc -o school main.o school.o
 	
-main.o : main.c
+main.o : main.c m.h
 	gcc -o main.o -c main.c
 	
-school.o : school.c
+school.o : school.c m.h
 	gcc -o school.o -c school.c
