@@ -11,5 +11,5 @@ NAME : main$(OBJ) NAME$(OBJ)
 main$(OBJ) : main$(SRC) m.h
 	$(CC) -o main$(OBJ) -c main$(SRC)
 	
-NAME$(OBJ) : school$(SRC) m.h
-	$(CC) -o NAME$(OBJ) -c school$(SRC)
+school$(OBJ) : school$(SRC) m.h
+	$(CC) -o school$(OBJ) -c school$(SRC)
