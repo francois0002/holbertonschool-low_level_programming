@@ -5,11 +5,11 @@ NAME = school
 
 all : NAME
 
-NAME : main$(OBJ) school(OBJ)
-	$(CC) -o school main$(OBJ) school$(OBJ)
+NAME : main$(OBJ) NAME(OBJ)
+	$(CC) -o NAME main$(OBJ) NAME$(OBJ)
 	
 main$(OBJ) : main$(SRC) m.h
 	$(CC) -o main$(OBJ) -c main$(SRC)
 	
-school$(OBJ) : school$(SRC) m.h
-	$(CC) -o school$(OBJ) -c school$(SRC)
+NAME$(OBJ) : NAME$(SRC) m.h
+	$(CC) -o NAME$(OBJ) -c NAME$(SRC)
