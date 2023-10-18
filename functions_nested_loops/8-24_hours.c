@@ -9,11 +9,10 @@
  */
 void jack_bauer(void)
 {
-int tm_sec;
-
-for (tm_sec = 0 ; tm_sec < 60 ; tm_sec++)
-return (1);    
-
-		
-
+	for (seconde = 0 ; seconde < 9 ; seconde++)	
+	{
+		_putchar('0'+ seconde);
+		_putchar('\n');
+	}
+			
 }
