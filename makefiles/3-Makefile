@@ -16,7 +16,7 @@ school$(OBJ) : school$(SRC) m.h
 	$(CC) -o school$(OBJ) -c school$(SRC)
 
 clean :
-	c
+	$(RM) *.o all
     
 oclean :
 	$(RM) *.o
