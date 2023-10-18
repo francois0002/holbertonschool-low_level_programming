@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: afficher nombre en hexadecimal
+ * Description: afficher nombre de 1 à 9 avec virgule et espace
  * Return:  0
  */
 int main(void)
