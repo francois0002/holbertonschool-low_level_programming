@@ -6,6 +6,21 @@ RM = oclean
 
 all : $(NAME)
 
+clean :
+	find ./ -name "#*#" | xargs rm
+	find ./ -name '*~' | xargs rm
+    
+oclean :
+	rm -rf *.o
+
+fclean :
+	find ./ -name "#*#" | xargs rm
+	find ./ -name '*~' | xargs rm
+	rm -rf *.o
+
+re :
+	gcc -g school.c main.c
+
 school : main$(OBJ) school$(OBJ)
 	$(CC) -o school main$(OBJ) school$(OBJ)
 	
@@ -27,5 +42,3 @@ fclean :
 	find ./ -name '*~' | xargs rm
 	rm -rf *.o
 
-re :
-	gcc -g school.c main.c
