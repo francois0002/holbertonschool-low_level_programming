@@ -5,7 +5,7 @@ NAME = school
 
 all : $(NAME)
 
-$(NAME) : main$(OBJ) school(OBJ)
+$*(school) : main$(OBJ) school$(OBJ)
 	$(CC) -o school main$(OBJ) school$(OBJ)
 	
 main$(OBJ) : main$(SRC) m.h
