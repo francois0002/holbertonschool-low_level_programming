@@ -2,6 +2,7 @@ CC = gcc
 SRC = .c
 OBJ = .o
 NAME = school
+RM = oclean
 
 all : $(NAME)
 
@@ -13,3 +14,18 @@ main$(OBJ) : main$(SRC) m.h
 	
 school$(OBJ) : school$(SRC) m.h
 	$(CC) -o school$(OBJ) -c school$(SRC)
+
+clean :
+	find ./ -name "#*#" | xargs rm
+	find ./ -name '*~' | xargs rm
+    
+oclean :
+	rm -rf *.o
+
+fclean :
+	find ./ -name "#*#" | xargs rm
+	find ./ -name '*~' | xargs rm
+	rm -rf *.o
+
+re :
+	gcc -g school.c main.c
