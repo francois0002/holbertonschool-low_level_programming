@@ -5,16 +5,24 @@
 /**
  * jack_bauer - Entry point
  * Description: afficher chaque minute de la journée de minuit à 23h59
- * Return:  m
+ * Return:  nothing
  */
  
-void jack_bauer(void)
+	void jack_bauer(void)
 {
 	int compteur;
 	int heures_1=0;
 	int heures_2 = 0;
 	int minutes_2 = 0;
 	int minutes_1 = 0;
+	
+	
+	putchar('0');
+	putchar('0');
+	putchar(':');
+	putchar('0');
+	putchar('0');
+	putchar('\n');
 	
 	for (compteur = 0 ; compteur < 1440 ; compteur++)
 	{
@@ -43,3 +51,4 @@ void jack_bauer(void)
 		putchar('\n');
 	}		
 }
+
