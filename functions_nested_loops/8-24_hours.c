@@ -6,34 +6,39 @@
  * Description: afficher chaque minute de la journée de minuit à 23h59
  * Return:  nothing
  */
+ 
 void jack_bauer(void)
 {
-	int heure1;
-	int heure2;
-	int minute1;
-	int minute2;
+	int compteur;
+	int heures_1ee = 0;
+	int heures_2 = 0;
+	int minutes_2 = -1;
+	int minutes_1 = 0;
 
-	for (heure1 = 0 ; heure1 <= 2 ; heure1++)
+
+	for (compteur = 0 ; compteur < 1440 ; compteur++)
 	{
-		for (heure2 = 0 ; heure2 < 10 ; heure2++)
+		minutes_2++;
+		if (minutes_2 > 9)
 		{
-			for (minute1 = 0 ; minute1 < 6 ; minute1++)
-			{
-				for (minute2 = 0 ; minute2 < 10 ; minute2++)
-				{
-					_putchar('0' + heure1);
-					_putchar('0' + heure2);
-					_putchar(':');
-					_putchar('0' + minute1);
-					_putchar('0' + minute2);
-					_putchar('\n');
-					if (heure1 == 2 && heure2 == 3 && minute1 == 5 && minute2 == 9)
-					{
-						return;
-					}
-				}
-			}
+		minutes_2 = 0;
+		minutes_1++;
 		}
+		putchar(heures_1 + '0');
+		if (minutes_1 > 5)
+		{
+		minutes_1 = 0;
+		heures_2++;
+		}
+		putchar(heures_2 + '0');
+		putchar(':');
+		if (heures_2 > 9)
+		{
+		heures_2 = 0;
+		heures_1++;
+		}
+		putchar(minutes_1 + '0');
+		putchar(minutes_2 + '0');
+		putchar('\n');
 	}
 }
-
