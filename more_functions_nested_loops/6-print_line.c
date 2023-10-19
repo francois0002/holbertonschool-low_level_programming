@@ -21,7 +21,7 @@ int compteur;
 		{
 			_putchar('_');
 		}
-	}
 	_putchar('\n');
+	}
 }
 
