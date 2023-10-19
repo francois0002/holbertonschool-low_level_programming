@@ -4,7 +4,7 @@
 #include "main.h"
 /**
  * _isdigit- Entry point
- * Description: permet de vérifier si la variable est un nombre entre 1 et 9 
+ * Description: permet de vérifier si la variable est un nombre entre 1 et 9
  * @c: charactère défini
  * Return:  1 is c est un nombre sinon 0
  */
