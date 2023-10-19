@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * jack_bauer - Entry point
  * Description: afficher chaque minute de la journée de minuit à 23h59
