@@ -9,7 +9,7 @@
  */
 void print_most_numbers(void)
 {
-	int compteur = 0;
+	int compteur = -1;
 
 		while (compteur < 9)
 		{
