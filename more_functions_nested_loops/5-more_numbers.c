@@ -9,17 +9,20 @@
  */
 void more_numbers(void)
 {
-	int compteur = -1;
+	int compteur_nombre = -1;
+	int compteur_lignes = 0;
 
-		while (compteur < 14)
+	for (compteur_lignes = 0 ; compteur_lignes < 10 ; compteur_lignes++)
+	{
+		for (compteur_nombre = 0 ; compteur_nombre < 15 ; compteur_nombre++)
 		{
-		compteur++;
-		if (compteur > 9)
+		if (compteur_nombre > 9)
 		{
-		_putchar(compteur / 10 + '0');
+			_putchar(compteur_nombre / 10 + '0');
 		}
-		_putchar(compteur % 10 + '0');
+		_putchar(compteur_nombre % 10 + '0');
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
 
