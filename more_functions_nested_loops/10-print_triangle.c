@@ -12,16 +12,16 @@ void print_triangle(int size)
 {
 int compteur;
 int compteur_espace;
-	if (n <= 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
 /* déclenche un boucle qui se terminera à la valeur de n) */
-		for (compteur = 0 ; compteur < n ; compteur++)
+		for (compteur = 0 ; compteur < size ; compteur++)
 		{
-			for (compteur_espace = 0 ; compteur_espace < n  ; compteur_espace++)
+			for (compteur_espace = 0 ; compteur_espace < size  ; compteur_espace++)
 			{
 				if (compteur_espace == compteur)
 				{
