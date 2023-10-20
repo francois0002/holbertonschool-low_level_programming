@@ -19,14 +19,13 @@ int compteur_espace;
 	else
 	{
 /* déclenche un boucle qui se terminera à la valeur de n) */
-		for (compteur = 1 ; compteur < n ; compteur++)
+		for (compteur = 0 ; compteur < n ; compteur++)
 		{
-			for (compteur_espace = 1 ; compteur_espace < n  ; compteur_espace++)
+			for (compteur_espace = 0 ; compteur_espace < n  ; compteur_espace++)
 			{
 				if (compteur_espace == compteur)
 				{
 					_putchar('\\');
-					compteur_espace--;
 				}
 				else
 				{
