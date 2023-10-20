@@ -25,16 +25,16 @@ int compteur_espace;
 			{
 				if (compteur_espace == compteur)
 				{
-					_putchar(47);
+					_putchar('\\');
+					compteur_espace--;
 				}
-				else 
+				else
 				{
 					_putchar(32);
-				}	
+				}
 			}
 			_putchar('\n');
-		}		
+		}
 	}
 
 }
-
