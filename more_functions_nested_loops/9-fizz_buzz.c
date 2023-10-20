@@ -1,7 +1,4 @@
-#include <time.h>
 #include <stdio.h>
-#include <unistd.h>
-#include "main.h"
 /**
  * main - Entry point
  * Description: afficher les nombres de 1 à 100
