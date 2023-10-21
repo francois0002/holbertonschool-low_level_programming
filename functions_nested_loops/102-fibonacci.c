@@ -8,14 +8,18 @@
 int main(void)
 {
 	int compteur;
-	int sum;
+	unsigned long  nbr_1 = 0;
+	unsigned long  nbr_2 = 1;
+	unsigned long sum = nbr_1 + nbr_2;
 
-	for (compteur = 1 ; compteur < 51 ; compteur++)
+	for (compteur = 0 ; compteur < 49 ; compteur++)
 	{
-		sum = sum + compteur;
-		printf("%d, ", sum);
+	sum = nbr_1 + nbr_2;
+	nbr_1 = nbr_2;
+	nbr_2 = sum;
+	printf("%lu, ", sum);
 	}
-	printf("1326");
+	printf("20365011074");
 	printf("\n");
 	return (0);
 }
