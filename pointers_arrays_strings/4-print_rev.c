@@ -7,8 +7,9 @@
  * @s : chaine de caractère
  */
 void print_rev(char *s)
+
 {
-	int compteur;
+	int compteur = 0;
 	int compteur2;
 
 	for (compteur = 0 ; *s != '\0' ; compteur++)
@@ -16,10 +17,11 @@ void print_rev(char *s)
 		s++;
 	}
 
-	for (compteur2 = compteur+1 ; compteur2 >= -1 ; compteur2--)
+	for (compteur2 = compteur-1 ; compteur2 > 0 ; compteur2--)
 	{
 		putchar(*s);
 		s--;
 	}
 putchar('\n');
 }
+
