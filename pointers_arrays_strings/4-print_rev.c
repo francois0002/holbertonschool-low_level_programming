@@ -16,10 +16,11 @@ void print_rev(char *s)
 		s++;
 	}
 
-	for (compteur2 = compteur ; compteur2 >= 1 ; compteur2--)
+	for (compteur2 = compteur ; compteur2 >= 0 ; compteur2--)
 	{
 		putchar(*s);
 		s--;
 	}
+putchar('\b');
 putchar('\n');
 }
