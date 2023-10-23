@@ -2,18 +2,31 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _puts - Entry point
+ * rev_string - Entry point
  * Description: afficher une chaine de caractère
  * @str : chaine de caractère
  * Return:  n
  */
-void _puts(char *str)
+ 
+ int _strlen(char *s);
+ 
+void rev_string(char *s)
 {
-int i;
-for (i = 0 ; *str != '\0' ; i++)
+int longueur = _strlen(s);
+int compteur;
+for (compteur = longueur ; compteur <= 0 ; compteur--)
 {
-	putchar(*str);
-	str++;
+putchar(*s);
 }
 putchar('\n');
+}
+
+int _strlen(char *s)
+{
+int longueur;
+for (longueur = 0 ; *s != '\0' ; longueur++)
+{
+	s++;
+}
+return (longueur);
 }
