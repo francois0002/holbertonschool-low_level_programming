@@ -17,7 +17,7 @@ void print_rev(char *s)
 		s++;
 	}
 
-	for (compteur2 = compteur - 1 ; compteur2 > 0 ; compteur2--)
+	for (compteur2 = compteur - 1 ; compteur2 >= 0 ; compteur2--)
 	{
 		putchar(*s);
 		s--;
