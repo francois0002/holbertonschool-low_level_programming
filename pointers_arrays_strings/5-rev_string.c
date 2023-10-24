@@ -14,7 +14,7 @@ int compteur_debut_caractere;
 char tmp;
 compteur_fin_caractere = longueur - 1;
 for (compteur_debut_caractere = 0 ; compteur_debut_caractere
-< compteur_fin_caractere ; compteur_debut_caractere++)
+< compteur_fin_caractere / 2 ; compteur_debut_caractere++)
 {
 tmp = s[compteur_debut_caractere];
 s[compteur_debut_caractere] = s[compteur_fin_caractere];
