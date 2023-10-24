@@ -11,9 +11,12 @@ void print_array(int *a, int n)
 {
 	int compteur;
 
+	if (n >= 0)
+	{
 		for (compteur = 0 ; compteur < (n - 1) ; compteur++)
 		{
 			printf("%d, ", a[compteur]);
 		}
 	printf("%d\n", a[n - 1]);
+	}
 }
