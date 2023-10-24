@@ -10,11 +10,12 @@ void puts2(char *str)
 {
 int longueur = _strlen(str);
 int compteur;
-int longueur_finale = longueur - 1;
+int longueur_finale = longueur;
 for (compteur = 0 ;  compteur < longueur_finale ; compteur = compteur + 2)
 {
-putchar(str[compteur]);
+_putchar(str[compteur]);
 }
+_putchar('\n');
 }
 /**
  * _strlen - Entry point
