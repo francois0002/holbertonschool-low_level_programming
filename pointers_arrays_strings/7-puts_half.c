@@ -14,8 +14,7 @@ void puts_half(char *str)
 
 	if (longueur_finale % 2 == 0)
 	{
-		for (compteur = (longueur_finale / 2);
-		compteur < longueur_finale ; compteur++)
+		for (compteur = (longueur_finale / 2) ; compteur < longueur_finale ; compteur++)
 		{
 			_putchar(str[compteur]);
 		}
@@ -23,8 +22,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		for (compteur = (longueur_finale / 2) + 1;
-		compteur < longueur_finale ; compteur++)
+		for (compteur = (longueur_finale / 2) + 1 ; compteur < longueur_finale ; compteur++)
 		{
 			_putchar(str[compteur]);
 		}
