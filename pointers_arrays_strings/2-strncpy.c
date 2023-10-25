@@ -3,15 +3,16 @@
 #include "main.h"
 #include <string.h>
 /**
- * _strncat - Entry point
+ * _strncpy - Entry point
  * Description: copie chaine de caractères
  * @dest: destination
  * @src: chaine à copier
+ * @n: entier
  * Return:  dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-_strcpy(dest + _strlen(dest), src - (strlen(src)+n));
+_strcpy(dest + _strlen(dest), src - (strlen(src) + n));
 return (dest);
 }
 /**

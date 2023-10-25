@@ -12,12 +12,15 @@
 int _strcmp(char *s1, char *s2)
 {
 int resultat;
-
 resultat = _strlen(s1) - _strlen(s2);
-
 return (resultat);
 }
-
+/**
+ * _strlen - Entry point
+ * Description: renvoi la longeur d'une chaine de caractère
+ * @s : caractère de  la variable
+ * Return:  longueur
+ */
 int _strlen(char *s)
 {
 int longueur;
