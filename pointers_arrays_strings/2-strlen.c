@@ -5,7 +5,7 @@
  * _strlen - Entry point
  * Description: renvoi la longeur d'une chaine de caractère
  * @s : caractère de  la variable
- * Return:  n
+ * Return:  longueur
  */
 int _strlen(char *s)
 {

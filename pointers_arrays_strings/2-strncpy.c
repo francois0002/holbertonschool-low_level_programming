@@ -3,15 +3,15 @@
 #include "main.h"
 #include <string.h>
 /**
- * _strcat - Entry point
- * Description: fusionne 2 chaine de caractère
+ * _strncat - Entry point
+ * Description: concatener 2 chaine de caractères
  * @dest: destination
  * @src: chaine à copier
  * Return:  dest
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
-_strcpy(dest + _strlen(dest), src);
+_strcpy(dest + _strlen(dest), src - (strlen(src)+n));
 return (dest);
 }
 /**
