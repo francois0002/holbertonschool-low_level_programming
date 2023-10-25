@@ -4,12 +4,12 @@
 #include <string.h>
 /**
  * _strncat - Entry point
- * Description: concatener 2 chaine de caractères
+ * Description: copie chaine de caractères
  * @dest: destination
  * @src: chaine à copier
  * Return:  dest
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 _strcpy(dest + _strlen(dest), src - (strlen(src)+n));
 return (dest);
