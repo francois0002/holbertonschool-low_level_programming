@@ -5,16 +5,23 @@
  * print_rev- Entry point
  * Description: afficher une chaine de caractère a l'envers
  * @s : chaine de caractère
- */
-void print_rev(char *s)
+ */ 
+void rev_string(char *s)
 {
 int longueur = _strlen(s);
-int compteur;
-for (compteur = longueur - 1 ; compteur >= 0 ; compteur--)
+int compteur_fin_caractere;
+int compteur_debut_caractere;
+char tmp;
+compteur_fin_caractere = longueur - 1;
+for (compteur_debut_caractere = 0 ; compteur_debut_caractere
+< compteur_fin_caractere ; compteur_debut_caractere++)
 {
-_putchar(s[compteur]);
+tmp = s[compteur_debut_caractere];
+s[compteur_debut_caractere] = s[compteur_fin_caractere];
+s[compteur_fin_caractere] = tmp;
+
+compteur_fin_caractere--;
 }
-_putchar('\n');
 }
 /**
  * _strlen - Entry point
