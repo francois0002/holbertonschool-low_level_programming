@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  * reset_to_98 - Entry point
- * Description: memset 
+ * Description: focntion
  * @b : bite initial
  * @n : nombre de bite à remplir
  * Return: adresse de s 
