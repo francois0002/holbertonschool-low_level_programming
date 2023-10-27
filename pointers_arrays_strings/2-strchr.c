@@ -2,20 +2,23 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _memset - Entry point
- * Description: focntion
- * @src : source  àcopier
- * @n : nombre de valeurs à copier
- * @dest : destination à copie
+ * _strchr - Entry point
+ * Description: focntion qui permet de trouver un charactère et d'afficher
+ * @s : string
+ * @c : char qui servira de base
  * Return: dest
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strchr(char *s, char c)
 {
-	unsigned int i;
+	int i;
 
-	for (i = 0 ; i < n ; i++)
+	for (i = 0 ; s[i] != '\0' ; i++)
 	{
-	src[i] = dest[n];
+		if (s[i] == c)
+		{
+		return (s + i);
+
+		}
 	}
-	return (dest);
+	return (0);
 }
