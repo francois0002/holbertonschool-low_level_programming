@@ -25,6 +25,6 @@ int is_prime_number(int n)
 	}
 	else
 	{
-	return(sqrt(n));
+	return (0);
 	}
 }
