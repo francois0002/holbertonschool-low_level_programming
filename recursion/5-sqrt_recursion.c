@@ -18,24 +18,8 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-		if (n < 0)
+	else
 	{
-		return (-1);
+	return (-1);
 	}
-	
-	
-	
-	if (y * y = n)
-	{
-	return(_sqrt_recursion(n / fonction_multiplication(y);
-	}
-}
-
-int fonction_multiplication(int y)
-{
-y = 1;
-int resultat;
-resultat = y * y;
-y++;
-return (resultat);
 }
