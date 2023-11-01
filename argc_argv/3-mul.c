@@ -11,11 +11,6 @@
 
 int main(int argc, char *argv[])
 {
-
-	int x = atoi(argv[1]);
-	int y = atoi(argv[2]);
-	int resultat = x * y;
-
 	if (argc != 3)
 	{
 		printf("Error\n");
@@ -23,9 +18,11 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		{
-			printf("%d\n", resultat);
-		}
+		int x = atoi(argv[1]);
+		int y = atoi(argv[2]);
+		int resultat = x * y;
+
+		printf("%d\n", resultat);
 	}
 	return (0);
 }
