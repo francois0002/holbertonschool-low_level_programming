@@ -25,9 +25,10 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	for (compteur = min ; compteur <= max ; compteur++)
+	for (compteur = 0 ; compteur <= max ; compteur++)
 	{
-		tab[compteur] = compteur;
+		tab[compteur] = min;
+		min++;
 	}
 	return (tab);
 }
