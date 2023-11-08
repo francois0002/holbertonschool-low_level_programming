@@ -18,19 +18,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int comparatif_de_n = _strlen(s2);
 	/**
 	 * si s1 ou s2 est null on les passe en chaine vide
+	  */
 	if (s2 == NULL)
 	{
-		s2[] = "\0";
+		s2 = '\0';
 	}
 		if (s1 == NULL)
 	{
-		s1[] = "\0";
+		s1 = '\0';
 	}
-	 */
 	/**
 	 * si n est supérieur à la longueur de la string s2 alors n = à s2
 	 */
-
 	if (n > comparatif_de_n)
 	{
 		n = comparatif_de_n;
@@ -40,19 +39,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-
-	fusion = malloc(sizeof(char) * n + sizeof(char) * _strlen(s1));
-	if (fusion == NULL)
-	{
-		return (NULL);
-	}
-
 	for (compteur = 0 ; compteur < n ; compteur++)
 	{
 		new_s2[compteur] = s2[compteur];
 	}
-
-
+	new_s2[compteur + 1] = '\0';
 	fusion = str_concat(s1, new_s2);
 	free(new_s2);
 	return (fusion);
