@@ -8,6 +8,7 @@ char *str_concat(char *s1, char *s2);
 int _strlen(char *s);
 void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
+char *_strcpy(char *dest, char *src);
 
 
 #endif
