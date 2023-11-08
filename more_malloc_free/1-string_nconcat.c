@@ -21,11 +21,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	  */
 	if (s2 == NULL)
 	{
-		s2 = '\0';
+		s2 = ""
 	}
 		if (s1 == NULL)
 	{
-		s1 = '\0';
+		s1 = "";
 	}
 	/**
 	 * si n est supérieur à la longueur de la string s2 alors n = à s2
@@ -47,7 +47,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	fusion = str_concat(s1, new_s2);
 	free(new_s2);
 	return (fusion);
-
 }
 
 /**
