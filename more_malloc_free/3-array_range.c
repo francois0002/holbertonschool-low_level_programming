@@ -20,12 +20,12 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	tab = malloc(sizeof(int) * (max + 1));
+	tab = malloc(sizeof(int) * (max - min + 1));
 	if (tab == NULL)
 	{
 		return (NULL);
 	}
-	for (compteur = 0 ; compteur <= max ; compteur++)
+	for (compteur = 0 ; compteur <= (max - min) ; compteur++)
 	{
 		tab[compteur] = min;
 		min++;
