@@ -63,8 +63,7 @@ char *fusion;
 int compteur;
 int compteur2;
 
-fusion = (char *) malloc(sizeof(char)
-* _strlen(s1) + sizeof(char) * _strlen(s2));
+fusion = (char *) malloc(sizeof(char) * _strlen(s1) + sizeof(char) * _strlen(s2));
 if (fusion == NULL)
 {
 	return (NULL);
