@@ -22,16 +22,8 @@ if (fusion == NULL)
 	return (NULL);
 }
 
-for (compteur = 0 ; s1[compteur]  != '\0' ; compteur++)
-{
-	fusion[compteur] = s1[compteur];
-}
-for (compteur2 = 0 ; s2[compteur2]  != '\0' ; compteur2++)
-{
-	fusion[compteur + compteur2] = s2[compteur2];
-}
+fusion = str_concat(s1, s2);
 
-fusion[compteur + compteur2 + 1] = '\0';
 
 
 
