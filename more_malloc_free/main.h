@@ -9,6 +9,8 @@ int _strlen(char *s);
 void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
 char *_strcpy(char *dest, char *src);
+int nombreDeChiffres(int nombre);
+int recupererChiffre(int nombre, int n);
 
 
 #endif
