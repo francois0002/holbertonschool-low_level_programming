@@ -17,14 +17,13 @@ void print_dog(struct dog *d)
 		return;
 	}
 
-
 	if (d->name == NULL)
 	{
 		d->name = valeur_null;
 	}
 	if (d->owner == NULL)
 	{
-		d->name = valeur_null;
+		d->owner = valeur_null;
 	}
 
 	printf("Name: %s\n", d->name);
