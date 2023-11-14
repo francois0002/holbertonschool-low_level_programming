@@ -11,17 +11,17 @@
 */
 int main(int argc, char *argv[])
 {
-	int nombre1 = atoi(argv[1]);
-	int nombre2 = atoi(argv[3]);
 
 	int resultat;
-
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
+
+
+
 	if (strcmp(argv[2], "+") != 0 && strcmp(argv[2], "-") != 0 &&
 		strcmp(argv[2], "*") != 0 && strcmp(argv[2], "/") != 0 &&
 		strcmp(argv[2], "%") != 0)
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	resultat = (*get_op_func(argv[2]))(nombre1, nombre2);
+	resultat = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
 	printf("%d\n", resultat);
 	return (0);
 }
