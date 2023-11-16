@@ -16,6 +16,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	va_list arg;
 	char *string;
+	char *replace = "(nil)";
 
 	if (n > 0)
 	{
@@ -27,7 +28,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		string = va_arg(arg, char *);
 		if (string == NULL)
 		{
-			strcpy(string, "(nil)");
+			strcpy(string, replace);
 		}
 		printf("%s", string);
 		if (i < n - 1 && separator != NULL)
