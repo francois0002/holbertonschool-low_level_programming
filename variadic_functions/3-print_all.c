@@ -77,14 +77,21 @@ void print_all(const char * const format, ...)
 		{"f", print_float},
 		{"s", print_string}
 	};
-
 	va_start(args, format);
-
-	while (format)
+	/**
+	* initialise la première boucle pour parcourir les formats
+	* rentrés dans la fonction main (s, d, i...)
+	*/
+	while (format[i] != '\0')
 	{
 		j = 0;
+	/**
+	* initialise la 2ème boucle pour comparer les formats rentrés
+	* dans la fonction main (s, d, i ...) et ceux de la structure de tableau
+	* créé predemment. j < 4 car il y a 4 éléments dans le tableau.
+	*/
+		while (j < 4 && format[i] != *(tab_foo[j].identifiant))
 
-		while (j < 4)
 			j++;
 
 		if (j < 4)
@@ -93,12 +100,8 @@ void print_all(const char * const format, ...)
 			tab_foo[j].ptr_sur_fprint(args);
 			separator = ", ";
 		}
-
 		i++;
 	}
-
-
 	printf("\n");
-
 	va_end(args);
 }
