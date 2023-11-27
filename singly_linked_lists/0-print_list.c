@@ -2,7 +2,6 @@
 
 /**
 * print_list- print the size of a list
-* @list_t: list to choose
 * @h: nom de quelqu'un
 * Return: the number of nodes
 */
