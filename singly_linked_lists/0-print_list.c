@@ -2,7 +2,7 @@
 
 /**
 * print_list- print the size of a list
-* @h: nom de quelqu'un
+* @h: node
 * Return: the number of nodes
 */
 
