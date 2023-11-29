@@ -2,7 +2,7 @@
 
 /**
 * add_node- add a new node at the beginning of a list
-* @head: node
+* @head: first punter
 * @str: string to put in the node
 * Return: the adresse of the new element
 */
@@ -33,14 +33,15 @@ list_t *add_node(list_t **head, const char *str)
 
 
 /**
- * _strlen - Entry point
- * Description: renvoi la longeur d'une chaine de caractère
- * @s : caractère de  la variable
- * Return:  longueur
- */
+* _strlen - Entry point
+* Description: renvoi la longeur d'une chaine de caractère
+* @s : caractère de  la variable
+* Return:  longueur
+*/
 int _strlen(char *s)
 {
 int longueur;
+
 for (longueur = 0 ; *s != '\0' ; longueur++)
 {
 	s++;
