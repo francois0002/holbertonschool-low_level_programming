@@ -1,14 +1,14 @@
 #include "lists.h"
 
 /**
-* list_len- return the number of element in a linked list
-* @h: node
+* dlistint_len- print the size of a double list
+* @h: first punter
 * Return: the number of nodes
 */
 
-size_t list_len(const list_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
-		size_t index;
+	size_t index;
 
 
 	if (h == NULL)
