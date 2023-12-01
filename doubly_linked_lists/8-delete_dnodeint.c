@@ -13,10 +13,8 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	unsigned int count;
 
 	ptr_node = *head;
-
 	if (*head == NULL)
-	return (-1);
-
+		return (-1);
 	if (index == 0)
 	{
 		if (ptr_node->next == NULL)
