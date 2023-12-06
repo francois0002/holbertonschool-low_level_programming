@@ -35,7 +35,7 @@ int main(int ac, char **av)
 	sucess_file_to = create_file2(av[2], buffer_main);
 	if (sucess_file_to == -1)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", av[2]);
+		dprintf(2, "Error: Can't write to from file %s\n", av[2]);
 		exit(99);
 	}
 
@@ -79,6 +79,11 @@ ssize_t read_textfile2(const char *filename, char *buffer_main, size_t letters)
 	strcpy(buffer_main, buffer);
 	free(buffer);
 	close(filedescriptor);
+	if (filedescriptor == -1)
+	{
+		dprintf(2, "Error: Can't close %s\n", filename);
+		exit(100);
+	}
 	return (1);
 }
 
@@ -110,5 +115,10 @@ int create_file2(const char *filename, char *buffer_main)
 	return (-1);
 
 	close(filedescriptor);
+	if (filedescriptor == -1)
+	{
+		dprintf(2, "Error: Can't close %s\n", filename);
+		exit(100);
+	}
 	return (1);
 }
