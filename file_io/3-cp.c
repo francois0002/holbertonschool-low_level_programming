@@ -35,7 +35,7 @@ int main(int ac, char **av)
 	sucess_file_to = create_file2(av[2], buffer_main);
 	if (sucess_file_to == -1)
 	{
-		dprintf(2, "Error: Can't write to from file %s\n", av[2]);
+		dprintf(2, "Error: Can't write to %s\n", av[2]);
 		exit(99);
 	}
 
